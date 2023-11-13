@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration page</title>
+    <link rel="stylesheet" href="register.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-6 col-xs-12">
+                <div class="logreg-box">
+                    <div class="form-box login col-xs-12">
+                        <form action="" method="post" name="form" onsubmit="return validated()">
+                            <h2>Sign Up</h2>
+                            <div class="input-box">
+                                <span class="icon"><i class="fa-solid fa-user"></i></span>
+                                <input type="text" name="uname" id="uname">
+                                <label for="uname">Name</label>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                                <input type="email" name="email" id="email">
+                                <label for="email">Email</label>
+                                <div id="email_error">Please check your Email</div>
+                            </div>
+                            <div class="input-box">
+                                <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                                <input type="password" name="password" id="password">
+                                <label for="password">password</label>
+                                <div id="pass_error">Please check your ssPassword</div>
+                            </div>
+                            <div>
+                                <button type="submit" class="sign" id="submit">Register</button>
+                            </div>
+                            <div class="login-register">
+                                <p>Do you have an account? <a href="#" class="register-link">Sign In</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+
+    <script src="design.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+</body>
+</html>

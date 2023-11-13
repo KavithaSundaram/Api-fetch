@@ -1,0 +1,176 @@
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url(seamless.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:center;
+    border-radius: 10px;
+}
+.container{
+    width: 50%;
+    margin: 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.logreg-box{
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logreg-box .form-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+    margin: 20px;
+    margin-left: 30px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: blueviolet;
+}
+.logreg-box .form-box.login{
+    transform: translateY(0);
+    transition: transform .6s ease-out;
+    transition-delay: .7s;
+}
+.logreg-box.active .form-box.login{
+    transform: translateY(650px);
+    transition-delay:0s ;
+}
+.logreg-box .form-box.register{
+    transform: translateY(650px);
+    transition: transform .5s ease-out;
+    transition-delay: 0s;
+}
+.logreg-box.active .form-box.register{
+    transform: translateY(0);
+    transition-delay:.7s;
+}
+form{
+    width: 50%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    padding: 30px;
+    background-color: #FFF;
+}
+.form-box h2{
+    font-size: 32px;
+    text-align: center;
+    font-weight: bold;
+    color: purple;
+}
+.form-box .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    padding-right: 28px;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 24px;
+    font-weight: 500;
+    transform: translateY(-50%);
+    transition: .5s ease;
+}
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+}
+.input-box .icon{
+    position: absolute;
+    top: 13px;
+    right: 0;
+    font-size: 20px;
+}
+.input-box #email_error,
+.input-box #pass_error{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 18px;
+    color: #C62828;
+    background-color: rgba(255,0,0,0.1);
+    padding: 5px;
+    border: 1px solid #EF9A9A;
+    border-radius: 3px;
+    display: none;
+}
+.remember-forgot{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 50px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.remember-forgot label input{
+    color: black;
+    margin-right: 3px;
+    margin-top: 5px;
+}
+.remember-forgot a{
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;    
+}
+.sign{
+    width: 100%;
+    height: 45px;
+    color: white;
+    background-color:mediumblue;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.5);
+}
+.sign:hover{
+    background-color: rgb(3, 3, 101);
+}
+.login-register{
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 25px;
+}
+.login-register p a{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.login-register p a:hover{
+    text-decoration: underline;
+}
+@media (max-width:768px) {
+    form{
+        width:100%
+    }
+    
+}
